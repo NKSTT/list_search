@@ -5,4 +5,7 @@ def find_min_count(data):
         data: list of numbers
     returns: count of minimum numbers in the list
     """
-    return 0
+    a = min(data)
+    return data.count(a)
+print (find_min_count([1, 8, 3, 8, 5]))
+print (find_min_count([0, -4, 3, 9, -2, -4]))
