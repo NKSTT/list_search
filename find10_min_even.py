@@ -5,5 +5,8 @@ def find_min_even(data):
         data: list of numbers
     returns: minimum even number in the list
     """
-    return 0
+    a = [num for num in data if num%2 == 0]
+    x = min(a)
+    return x
+print (find_min_even([1, 8, 2, 8, 5]))
 
